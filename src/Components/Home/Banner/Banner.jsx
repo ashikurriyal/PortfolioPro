@@ -19,9 +19,9 @@ const Banner = () => {
           <h2 className="font-urbanist dark:text-white lg:font-semibold lg:text-6xl w-3/4 lg:w-auto text-xl font-bold">
             Passionate Web Developer
           </h2>
-          <p className="lg:text-xl text-sm">
-            
-          </p>
+          <button className="font-poppins font-medium border-2 w-36 h-12 hover:bg-customOrange hover:text-white hover:border-none border-black rounded-full p-2 text-sm lg:text-2xl">
+              Resume
+            </button>
         </div>
       </div>
     </>
