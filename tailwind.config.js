@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         customOrange: '#FD853A',
+        footerBlack: '#272727',
       },
     },
   },

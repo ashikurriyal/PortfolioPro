@@ -21,7 +21,7 @@ const Banner = () => {
           </h2>
           <button className="font-poppins font-medium border-2 w-36 h-12 hover:bg-customOrange hover:text-white hover:border-none border-black rounded-full p-2 text-sm lg:text-2xl">
               Resume
-            </button>
+          </button>
         </div>
       </div>
     </>
