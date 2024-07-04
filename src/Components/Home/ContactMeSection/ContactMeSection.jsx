@@ -17,7 +17,7 @@ const ContactMeSection = () => {
           </h1>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-around">
+        <div className="flex flex-col md:flex-row justify-around md:gap-0 gap-4">
           {/* social */}
           <div className="flex flex-col gap-4">
             <div className="bg-white shadow-2xl px-12 py-6 rounded-xl flex flex-col items-center gap-2 border-2 border-customOrange">
@@ -45,7 +45,7 @@ const ContactMeSection = () => {
             </div>
           </div>
           <div className="flex flex-col justify-center">
-            <img src={frame} alt="" />
+            <img src={frame} className="md:block hidden" alt="" />
           </div>
           {/* contactform */}
           <div className="flex flex-col justify-center">

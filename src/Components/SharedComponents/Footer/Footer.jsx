@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <div className="mt-8">
       <footer className="px-4 bg-footerBlack divide-y dark:bg-gray-100 dark:text-gray-800 rounded-t-3xl">
-        <div className="flex lg:flex-row justify-between items-center">
+        <div className="flex lg:flex-row flex-col justify-between items-center">
           <div className="py-12">
-            <h2 className="font-poppins text-white font-semibold text-5xl">Lets Connect Together</h2>
+            <h2 className="font-poppins text-white font-semibold md:text-5xl text-3xl">Lets Connect Together</h2>
           </div>
           <div>
-            <button className="font-poppins font-medium border-2 w-44 h-16 bg-customOrange text-white border-none rounded-full p-2 text-sm lg:text-2xl">
+            <button className="font-poppins font-medium border-2 w-44 h-16 bg-customOrange text-white border-none rounded-full p-2 text-xl lg:text-2xl">
               Contact Me
             </button>
           </div>
