@@ -20,7 +20,7 @@ const Navbar = () => {
 
     const navItems = (
         <>
-            <li className={`font-semibold text-xl font-poppins ${location.pathname === '/' ? 'border-b-4 border-yellow-400' : ''}`}>
+            <li className={`font-semibold text-xl font-poppins ${location.pathname === '/' ? 'border-b-4 border-customOrange' : ''}`}>
                 <Link to="/">Home</Link>
             </li>
         </>

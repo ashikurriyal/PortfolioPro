@@ -3,11 +3,35 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import frame from "../../../assets/Frame 11.png";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 const ContactMeSection = () => {
   const { register, handleSubmit } = useForm();
 
-  const onSubmit = () => {};
+  const onSubmit = (data) => {
+    const name = data.name;
+    const email = data.email
+    const message = data.message
+
+    const templateParams = {
+        from_name: email,
+        to_name: name,
+        message : message,
+      };
+    // console.log(data)
+    emailjs
+      .send(`${import.meta.env.VITE_service_id}`, `${import.meta.env.VITE_template_id}`, templateParams, {
+        publicKey: `${import.meta.env.VITE_public_key}`,
+      })
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (err) => {
+          console.log("FAILED...", err);
+        }
+      );
+  };
   return (
     <div className="bg-customAsh py-10 rounded-3xl ">
       <div className="lg:mx-32 mx-6 space-y-10">
@@ -93,7 +117,12 @@ const ContactMeSection = () => {
 
               <div className="form-group">
                 <textarea
-                  className="textarea textarea-warning textarea-lg" cols={40} rows={5}
+                  {...register("message")}
+                  type="text"
+                  id="message"
+                  className="textarea textarea-warning textarea-lg"
+                  cols={40}
+                  rows={5}
                   placeholder="Details Here"
                 ></textarea>
               </div>

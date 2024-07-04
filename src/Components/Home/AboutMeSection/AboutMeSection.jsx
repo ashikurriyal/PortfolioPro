@@ -5,13 +5,13 @@ const AboutMeSection = () => {
     <div className='space-y-10'>
       <div className="text-center space-y-4 md:mt-0">
         <h1 className="font-poppins lg:text-5xl text-xl font-medium">
-          What <span className="text-customOrange">About Me</span>
+          What <span className="text-customOrange">About Me?</span>
         </h1>
       </div>
       <div className="flex md:flex-row flex-col items-center justify-center gap-16">
         {/* left side */}
         <div className=''>
-          <img className='w-72 rounded-3xl shadow-2xl' src={aboutImage} alt="" />
+          <img className='w-72 rounded-3xl border-t-2 border-t-customOrange border-b-4 border-b-customOrange hover:shadow-lg hover:shadow-customOrange' src={aboutImage} alt="" />
         </div> 
         <div className='border-2 border-customOrange h-64 md:block hidden'></div>
         <div className='border-2 border-customOrange w-2/3 md:hidden block'></div>
