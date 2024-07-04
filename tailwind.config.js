@@ -9,6 +9,7 @@ export default {
       colors: {
         customOrange: '#FD853A',
         footerBlack: '#272727',
+        customAsh: '#F2F4F7',
       },
     },
   },
