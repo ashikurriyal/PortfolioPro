@@ -1,5 +1,6 @@
-import image from '../../../assets/bannerimage1.png'
-
+import image from "../../../assets/bannerimage1.png";
+import { MdOutlineSaveAlt } from "react-icons/md";
+import resume from "../../../assets/DemoResume.pdf";
 const Banner = () => {
   const bannerTitile = (
     <>
@@ -17,9 +18,13 @@ const Banner = () => {
           <h2 className="font-urbanist dark:text-white lg:font-semibold lg:text-6xl md:w-3/4 lg:w-auto text-xl font-bold">
             Passionate Web Developer
           </h2>
-          <button className="font-poppins text-lg font-medium border-2 w-36 h-12 hover:bg-customOrange hover:text-white hover:border-none border-black rounded-full p-2 lg:text-2xl">
-              Resume
-          </button>
+          <div className="">
+            <a href={resume} download="resume">
+              <button className="flex items-center justify-center gap-2 font-poppins text-lg font-medium border-2 h-12 hover:bg-customOrange hover:text-white hover:border-none border-black rounded-full p-4 lg:text-2xl">
+                Resume <MdOutlineSaveAlt className="md:text-4xl" />
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </>
@@ -29,7 +34,7 @@ const Banner = () => {
       <div className="w-full lg:h-[calc(100vh-76px)] relative">
         {bannerTitile}
       </div>
-      <div className='md:absolute right-40'>
+      <div className="md:absolute right-40">
         <img src={image} alt="" />
       </div>
     </div>
