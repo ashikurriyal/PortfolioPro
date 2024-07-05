@@ -26,7 +26,7 @@ const EducationSection = () => {
               </h1>
               <p>
                 <small className="mt-10 font-light text-xl italic font-poppins">
-                  Bachelor of Science in Computer Science and Engineering
+                  Bachelor of Science in Computer Science and Engineering(Ongoing)
                 </small>
               </p>
             </div>
