@@ -4,7 +4,7 @@ const EducationSection = () => {
   return (
     <div>
       <div className="text-center space-y-4 mt-10 md:mt-0">
-        <h1 className="font-poppins lg:text-5xl text-2xl font-medium">
+        <h1 className="font-poppins lg:text-5xl text-2xl font-semibold">
           My <span className="text-customOrange">Educational Background</span>
         </h1>
       </div>

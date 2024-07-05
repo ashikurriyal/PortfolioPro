@@ -4,6 +4,7 @@ import Banner from "./Banner/Banner";
 import ContactMeSection from "./ContactMeSection/ContactMeSection";
 import EducationSection from "./EducationSection/EducationSection";
 import ExpertiseSection from "./ExpertiseSection/ExpertiseSection";
+import ProjectSection from "./ProjectSection/ProjectSection";
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
             </div>
             <ExpertiseSection></ExpertiseSection>
             <div className="lg:mx-32 mx-6 space-y-20">
+                <ProjectSection></ProjectSection>
                 <EducationSection></EducationSection>
             </div>
             <ContactMeSection></ContactMeSection>

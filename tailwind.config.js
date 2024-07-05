@@ -11,6 +11,7 @@ export default {
         footerBlack: '#272727',
         customAsh: '#F2F4F7',
         bloorAsh: '#FFFFFF24',
+      
       },
     },
   },
