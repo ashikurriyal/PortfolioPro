@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="mt-8">
       <footer className="px-4 bg-footerBlack divide-y dark:bg-gray-100 dark:text-gray-800 rounded-t-3xl">
-        <div className="flex lg:flex-row flex-col justify-between items-center">
+        {/* <div className="flex lg:flex-row flex-col justify-between items-center">
           <div className="py-12">
             <h2 className="font-poppins text-white font-semibold md:text-5xl text-3xl">Lets Connect Together</h2>
           </div>
@@ -14,8 +14,8 @@ const Footer = () => {
               Contact Me
             </button>
           </div>
-        </div>
-        <div className="border-2 border-black"></div>
+        </div> */}
+        {/* <div className="border-2 border-black"></div> */}
         <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
           <div className="lg:w-1/3">
             <a
@@ -112,7 +112,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div></div>
+        
         <div className="border-2 border-black"></div>
         <div className="py-6 flex text-white justify-between font-mont font-normal text-lg text-center dark:text-gray-600">
           <p>©All rights reserved by Molla Ashikur Rahman</p>
