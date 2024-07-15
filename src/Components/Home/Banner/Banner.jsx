@@ -1,6 +1,6 @@
 import image from "../../../assets/bannerimage1.png";
 import { MdOutlineSaveAlt } from "react-icons/md";
-import resume from "../../../assets/DemoResume.pdf";
+import resume from "../../../assets/Molla-Ashikur-Rahman-Resume.pdf";
 const Banner = () => {
   const bannerTitile = (
     <>
@@ -19,7 +19,7 @@ const Banner = () => {
             Passionate Web Developer
           </h2>
           <div className="">
-            <a href={resume} download="resume">
+            <a href={resume} download="Molla_Ashikur_Rahman_Resume">
               <button className="flex items-center justify-center gap-2 font-poppins text-lg font-medium border-2 h-12 hover:bg-customOrange hover:text-white hover:border-none border-black rounded-full p-4 lg:text-2xl">
                 Resume <MdOutlineSaveAlt className="md:text-4xl" />
               </button>
